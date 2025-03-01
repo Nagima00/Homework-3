@@ -2,12 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MUDGame {
-    // Cloneable Interface
     interface CloneableGameEntity {
         CloneableGameEntity cloneEntity();
     }
 
-    // Room Class
     static class Room implements CloneableGameEntity {
         private final String description;
 
@@ -45,7 +43,6 @@ public class MUDGame {
         }
     }
 
-    // Dungeon Class
     static class Dungeon {
         private final String name;
         private final List<Room> rooms;
